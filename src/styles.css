@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Bellefair&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Commissioner:wght@100;200;300;400;500;600;700;800;900&family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400&family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Karla:wght@200;300;400;500;600;700;800&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,800;1,900&family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Overpass:wght@100;200;300;400;500;600;700;800;900&family=Permanent+Marker&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Red+Hat+Text:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: League Spartan;
+}
+.jobs-container .job-container
+@media (min-width:781px){
+    .container{
+        width: 750px;
+    }
+}
+
+@media (min-width:991px){
+    .container{
+        width: 950px;
+    }
+}
+
+@media (min-width:1191px){
+    .container{
+        width: 1150px;
+    }
+}
+@media (min-width:1500px){
+    .container{
+        width: 1400px;
+    }
+}
+
+.container{
+    margin: auto;
+    padding: 0 20px;
+}
+
+body{
+    min-height: 100vh;
+    background-color: hsl(180, 52%, 96%);
+}
+
+header{
+    min-height: 20vh;
+    background-image: url('./images/bg-header-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(180, 29%, 50%);
+    margin-bottom: 150px;
+}
+
+header .container{
+    padding-top: 140px;
+    height: 100%;
+}
+
+header .search-container{
+    background-color: white;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px;
+    width: 100%;
+    box-shadow: 0px 5px 20px  hsl(180, 14%, 47%);
+    position: relative;
+    top: 45px;
+    transition: all .2s ease;
+}
+
+header .search-container .filter-search{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+header .search-container .filter-search > div{
+    font-weight: 700;
+    text-transform: capitalize;
+    color: hsl(180, 29%, 50%);
+    background-color: hsl(180, 31%, 95%);
+    display: flex;
+    align-items: center;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+header .search-container .filter-search > div > p{
+    padding: 5px 10px;
+    font-size: 17px;
+}
+
+header .search-container .filter-search > div .close-icon{
+    background-image: url('./images/icon-remove.svg');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    background-color: hsl(180, 29%, 50%);
+    height: 100%;
+    width: 40px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+header .search-container .filter-search > div .close-icon:hover{
+    background-color: hsl(180, 14%, 20%);
+}
+
+header .search-container .clear-btn{
+    font-weight: 700;
+    text-transform: capitalize;
+    color: hsl(180, 29%, 50%);
+    font-size: 17px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+header .search-container .clear-btn:hover{
+    text-decoration: underline;
+}
+
+@media (max-width:400px){
+    header .search-container {
+        bottom: -160px;
+    }
+}
+
+.jobs-container{
+    padding-bottom: 5px;
+}
+
+.jobs-container .job-container{
+    background-color: white;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding: 35px 40px;
+    gap: 25px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.jobs-container .job-container > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    gap: 30px;
+}
+
+.jobs-container .job-container > div .info{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.jobs-container .job-container > div .info div{
+    display: flex;
+    align-items: center;
+}
+
+.jobs-container .job-container > div .info > div:first-child{
+    gap: 15px;
+}
+
+.jobs-container .job-container > div .tags{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.jobs-container .job-container > div .info .name{
+    color: hsl(180, 29%, 50%);
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+
+
+.jobs-container .job-container > div .info :is(.new, .featured){
+    color: white;
+    font-size: 14px;
+    border-radius: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2.5px;
+    height: 22px;
+}
+
+.jobs-container .job-container > div .info .new{
+    background-color: hsl(180, 29%, 50%);
+    width: 50px;
+}
+
+.jobs-container .job-container > div .info .featured{
+    background-color: hsl(180, 14%, 20%);
+    width: 80px;
+}
+
+.jobs-container .job-container > div .info .job{
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+
+.jobs-container .job-container > div .info > div:last-child{
+    color: hsl(180, 14%, 47%);
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 17px;
+    gap: 50px;
+}
+
+
+.jobs-container .job-container > div .tags p{
+    font-weight: 700;
+    text-transform: capitalize;
+    color: hsl(180, 29%, 50%);
+    background-color: hsl(180, 31%, 95%);
+    display: flex;
+    align-items: center;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.jobs-container .job-container > div .tags p:hover{
+    color: white;
+    background-color: hsl(180, 29%, 50%);
+}
+
+.jobs-container .job-container > div .info > div:last-child > div:nth-child(2){
+    position: relative;
+}
+
+.jobs-container .job-container > div .info > div:last-child > div:nth-child(2)::before,
+.jobs-container .job-container > div .info > div:last-child > div:nth-child(2)::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: hsl(180, 14%, 47%);
+}
+
+.jobs-container .job-container > div .info > div:last-child > div:nth-child(2)::before{
+    left: -25px;
+}
+
+.jobs-container .job-container > div .info > div:last-child > div:nth-child(2)::after{
+    right: -25px;
+}
+
+
+@media (max-width:1191px){
+    .jobs-container .job-container > div .info > div:last-child {
+        font-size: 15px;
+    }
+    .jobs-container .job-container > div .tags p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width:781px){
+    .jobs-container .job-container {
+        flex-direction: column;
+        padding: 50px 20px 30px;
+        margin-bottom: 50px;
+    }
+    .jobs-container .job-container .profile-pic{
+        position: absolute;
+        width: 70px;
+        left: 20px;
+        top: -35px;
+    }
+    .jobs-container .job-container > div {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+    .jobs-container .job-container > div .tags {
+        justify-content: left;
+        border-top: 1px solid rgba(0, 0, 0, 0.3);
+        padding: 20px 0 0;
+    }
+    .jobs-container .job-container > div :is(.info, .tags){
+        width: 100%;
+    }
+    .jobs-container .job-container > div .info > div:last-child {
+        gap: 30px;
+    }
+    .jobs-container .job-container > div .info > div:last-child > div:nth-child(2)::before {
+        left: -15px;
+    }
+    .jobs-container .job-container > div .info > div:last-child > div:nth-child(2)::after {
+        right: -15px;
+    }
+}
